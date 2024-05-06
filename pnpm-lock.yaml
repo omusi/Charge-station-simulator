@@ -21,8 +21,8 @@ importers:
         specifier: ^6.2.4
         version: 6.2.4
       '@mikro-orm/mariadb':
-        specifier: ^6.2.4
-        version: 6.2.4(@mikro-orm/core@6.2.4)
+        specifier: ^6.2.5
+        version: 6.2.5(@mikro-orm/core@6.2.4)
       '@mikro-orm/reflection':
         specifier: ^6.2.4
         version: 6.2.4(@mikro-orm/core@6.2.4)
@@ -810,8 +810,14 @@ packages:
     peerDependencies:
       '@mikro-orm/core': ^6.0.0
 
-  '@mikro-orm/mariadb@6.2.4':
-    resolution: {integrity: sha512-j5CO6l4q+cup4JGKPbonBwzasT9LSo/v+nWKscXkSR43O5F7Is98O3FQYENrhrBFL9+dLeuzy2WmSRTyL0bxqw==}
+  '@mikro-orm/knex@6.2.5':
+    resolution: {integrity: sha512-PNKzclHk21Yx4dlfoTttUCOSAqj32WSSdY4G+mxpukTtIgSc/iFd8OpkJ+x/c9tfs27o3ZyBRQRxDoC6fMA4hQ==}
+    engines: {node: '>= 18.12.0'}
+    peerDependencies:
+      '@mikro-orm/core': ^6.0.0
+
+  '@mikro-orm/mariadb@6.2.5':
+    resolution: {integrity: sha512-Bv7BOp3OsXPFOU/7qDodBOREe6//SQ7EeG8p1KhTINasUR2pQML0TOzfl7C9PgHrldIElYi9k2hIKyvNWRQsHg==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
       '@mikro-orm/core': ^6.0.0
@@ -6853,10 +6859,26 @@ snapshots:
       - supports-color
       - tedious
 
-  '@mikro-orm/mariadb@6.2.4(@mikro-orm/core@6.2.4)':
+  '@mikro-orm/knex@6.2.5(@mikro-orm/core@6.2.4)':
     dependencies:
       '@mikro-orm/core': 6.2.4
-      '@mikro-orm/knex': 6.2.4(@mikro-orm/core@6.2.4)(sqlite3@5.1.7)
+      fs-extra: 11.2.0
+      knex: 3.1.0(sqlite3@5.1.7)
+      sqlstring: 2.3.3
+    transitivePeerDependencies:
+      - better-sqlite3
+      - mysql
+      - mysql2
+      - pg
+      - pg-native
+      - sqlite3
+      - supports-color
+      - tedious
+
+  '@mikro-orm/mariadb@6.2.5(@mikro-orm/core@6.2.4)':
+    dependencies:
+      '@mikro-orm/core': 6.2.4
+      '@mikro-orm/knex': 6.2.5(@mikro-orm/core@6.2.4)
       mariadb: 3.3.0
     transitivePeerDependencies:
       - better-sqlite3
