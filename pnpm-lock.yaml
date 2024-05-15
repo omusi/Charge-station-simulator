@@ -27,8 +27,8 @@ importers:
         specifier: ^6.2.4
         version: 6.2.4(@mikro-orm/core@6.2.4)
       '@mikro-orm/sqlite':
-        specifier: ^6.2.4
-        version: 6.2.4(@mikro-orm/core@6.2.4)
+        specifier: ^6.2.6
+        version: 6.2.6(@mikro-orm/core@6.2.4)
       ajv:
         specifier: ^8.13.0
         version: 8.13.0
@@ -810,6 +810,12 @@ packages:
     peerDependencies:
       '@mikro-orm/core': ^6.0.0
 
+  '@mikro-orm/knex@6.2.6':
+    resolution: {integrity: sha512-cAIHh0Z5yCiVfESpK7tAH6Hepn4+E+GSOb/0N8nl/RA8XsIlCyjKZiMJMy/rWHL2TxFZn6VJK5Ip5XpPy2rRIw==}
+    engines: {node: '>= 18.12.0'}
+    peerDependencies:
+      '@mikro-orm/core': ^6.0.0
+
   '@mikro-orm/mariadb@6.2.4':
     resolution: {integrity: sha512-j5CO6l4q+cup4JGKPbonBwzasT9LSo/v+nWKscXkSR43O5F7Is98O3FQYENrhrBFL9+dLeuzy2WmSRTyL0bxqw==}
     engines: {node: '>= 18.12.0'}
@@ -822,8 +828,8 @@ packages:
     peerDependencies:
       '@mikro-orm/core': ^6.0.0
 
-  '@mikro-orm/sqlite@6.2.4':
-    resolution: {integrity: sha512-dyiD/AGZOfXa3AyfWLmSLzc1bEE/Lxwn9T3fih57Dig7+TvCiCWLHqBW+8xJkYqPWXrBygdxuWLSxuVI/qPGWA==}
+  '@mikro-orm/sqlite@6.2.6':
+    resolution: {integrity: sha512-Ojb+cRiGkiCJCXkD0B24MdNSFPuQPn6chLXNIzX1sbERqZcs8AIsEjXt/Cs9PxRsF7LbU3h+sE/1VHokD7c4CQ==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
       '@mikro-orm/core': ^6.0.0
@@ -6813,7 +6819,7 @@ snapshots:
     dependencies:
       '@jercle/yargonaut': 1.1.5
       '@mikro-orm/core': 6.2.4
-      '@mikro-orm/knex': 6.2.4(@mikro-orm/core@6.2.4)(sqlite3@5.1.7)
+      '@mikro-orm/knex': 6.2.4(@mikro-orm/core@6.2.4)
       fs-extra: 11.2.0
       tsconfig-paths: 4.2.0
       yargs: 17.7.2
@@ -6837,7 +6843,23 @@ snapshots:
       mikro-orm: 6.2.4
       reflect-metadata: 0.2.2
 
-  '@mikro-orm/knex@6.2.4(@mikro-orm/core@6.2.4)(sqlite3@5.1.7)':
+  '@mikro-orm/knex@6.2.4(@mikro-orm/core@6.2.4)':
+    dependencies:
+      '@mikro-orm/core': 6.2.4
+      fs-extra: 11.2.0
+      knex: 3.1.0(sqlite3@5.1.7)
+      sqlstring: 2.3.3
+    transitivePeerDependencies:
+      - better-sqlite3
+      - mysql
+      - mysql2
+      - pg
+      - pg-native
+      - sqlite3
+      - supports-color
+      - tedious
+
+  '@mikro-orm/knex@6.2.6(@mikro-orm/core@6.2.4)(sqlite3@5.1.7)':
     dependencies:
       '@mikro-orm/core': 6.2.4
       fs-extra: 11.2.0
@@ -6856,7 +6878,7 @@ snapshots:
   '@mikro-orm/mariadb@6.2.4(@mikro-orm/core@6.2.4)':
     dependencies:
       '@mikro-orm/core': 6.2.4
-      '@mikro-orm/knex': 6.2.4(@mikro-orm/core@6.2.4)(sqlite3@5.1.7)
+      '@mikro-orm/knex': 6.2.4(@mikro-orm/core@6.2.4)
       mariadb: 3.3.0
     transitivePeerDependencies:
       - better-sqlite3
@@ -6874,10 +6896,10 @@ snapshots:
       globby: 11.1.0
       ts-morph: 22.0.0
 
-  '@mikro-orm/sqlite@6.2.4(@mikro-orm/core@6.2.4)':
+  '@mikro-orm/sqlite@6.2.6(@mikro-orm/core@6.2.4)':
     dependencies:
       '@mikro-orm/core': 6.2.4
-      '@mikro-orm/knex': 6.2.4(@mikro-orm/core@6.2.4)(sqlite3@5.1.7)
+      '@mikro-orm/knex': 6.2.6(@mikro-orm/core@6.2.4)(sqlite3@5.1.7)
       fs-extra: 11.2.0
       sqlite3: 5.1.7
       sqlstring-sqlite: 0.1.1
