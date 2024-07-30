@@ -1,0 +1,205 @@
+{
+  "stationInfo": {
+    "enableStatistics": true,
+    "autoStart": true,
+    "remoteAuthorization": true,
+    "currentOutType": "AC",
+    "mainVoltageMeterValues": true,
+    "phaseLineToLineVoltageMeterValues": false,
+    "customValueLimitationMeterValues": true,
+    "ocppStrictCompliance": true,
+    "outOfOrderEndMeterValues": false,
+    "beginEndMeterValues": false,
+    "meteringPerTransaction": true,
+    "transactionDataMeterValues": false,
+    "supervisionUrlOcppConfiguration": false,
+    "supervisionUrlOcppKey": "ConnectionUrl",
+    "useConnectorId0": true,
+    "ocppVersion": "1.6",
+    "firmwareVersionPattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$",
+    "firmwareUpgrade": {
+      "versionUpgrade": {
+        "step": 1
+      },
+      "reset": true
+    },
+    "ocppPersistentConfiguration": true,
+    "stationInfoPersistentConfiguration": true,
+    "automaticTransactionGeneratorPersistentConfiguration": true,
+    "resetTime": 30000,
+    "autoReconnectMaxRetries": -1,
+    "registrationMaxRetries": -1,
+    "reconnectExponentialDelay": false,
+    "stopTransactionsOnStopped": true,
+    "idTagsFile": "idtags.json",
+    "baseName": "CS-SIEMENS",
+    "fixedName": true,
+    "chargePointModel": "SIEMENSXX213",
+    "chargePointVendor": "SIEMENS",
+    "randomConnectors": false,
+    "voltageOut": 240,
+    "templateHash": "9c49d1487e5dff1d111b5331b1cc6e48a85b247103ed8e9105f187d7ef06235a3e4f78a757a53cbcde8dbf76b3c229cf",
+    "hashId": "256627d21bf834004d09a1c7b438a328ba667a2742882df6c2ae20764c8208237e1f0e5b0cf44f46fc836bb9046932f6",
+    "templateIndex": 1,
+    "templateName": "siemens.station-template",
+    "chargingStationId": "CS-SIEMENS",
+    "maximumPower": 44160,
+    "maximumAmperage": 31,
+    "supervisionUrls": "wss://localhost:8010"
+  },
+  "automaticTransactionGenerator": {
+    "enable": false,
+    "minDuration": 60,
+    "maxDuration": 80,
+    "minDelayBetweenTwoTransactions": 15,
+    "maxDelayBetweenTwoTransactions": 30,
+    "probabilityOfStart": 1,
+    "stopAfterHours": 0.3,
+    "stopAbsoluteDuration": false,
+    "requireAuthorize": true
+  },
+  "connectorsStatus": [
+    {
+      "availability": "Operative",
+      "chargingProfiles": []
+    },
+    {
+      "bootStatus": "Unavailable",
+      "MeterValues": [
+        {
+          "unit": "Wh",
+          "context": "Sample.Periodic"
+        }
+      ],
+      "availability": "Operative",
+      "idTagLocalAuthorized": false,
+      "idTagAuthorized": false,
+      "transactionRemoteStarted": false,
+      "transactionStarted": false,
+      "energyActiveImportRegisterValue": 0,
+      "transactionEnergyActiveImportRegisterValue": 0,
+      "chargingProfiles": []
+    },
+    {
+      "MeterValues": [
+        {
+          "context": "Sample.Periodic",
+          "unit": "Wh"
+        }
+      ],
+      "availability": "Operative",
+      "idTagLocalAuthorized": false,
+      "idTagAuthorized": false,
+      "transactionRemoteStarted": false,
+      "transactionStarted": false,
+      "energyActiveImportRegisterValue": 0,
+      "transactionEnergyActiveImportRegisterValue": 0,
+      "chargingProfiles": []
+    }
+  ],
+  "automaticTransactionGeneratorStatuses": [
+    {
+      "start": true,
+      "authorizeRequests": 0,
+      "acceptedAuthorizeRequests": 0,
+      "rejectedAuthorizeRequests": 0,
+      "startTransactionRequests": 0,
+      "acceptedStartTransactionRequests": 0,
+      "rejectedStartTransactionRequests": 0,
+      "stopTransactionRequests": 0,
+      "acceptedStopTransactionRequests": 0,
+      "rejectedStopTransactionRequests": 0,
+      "skippedConsecutiveTransactions": 0,
+      "skippedTransactions": 0,
+      "startDate": "2024-05-20T00:25:53.007Z",
+      "stopDate": "2024-05-20T00:43:53.007Z"
+    },
+    {
+      "start": false,
+      "authorizeRequests": 0,
+      "acceptedAuthorizeRequests": 0,
+      "rejectedAuthorizeRequests": 0,
+      "startTransactionRequests": 0,
+      "acceptedStartTransactionRequests": 0,
+      "rejectedStartTransactionRequests": 0,
+      "stopTransactionRequests": 0,
+      "acceptedStopTransactionRequests": 0,
+      "rejectedStopTransactionRequests": 0,
+      "skippedConsecutiveTransactions": 0,
+      "skippedTransactions": 0
+    }
+  ],
+  "configurationKey": [
+    {
+      "key": "MeterValuesSampledData",
+      "readonly": false,
+      "value": "Energy.Active.Import.Register"
+    },
+    {
+      "key": "MeterValueSampleInterval",
+      "readonly": false,
+      "value": "30"
+    },
+    {
+      "key": "SupportedFeatureProfiles",
+      "readonly": true,
+      "value": "Core,LocalAuthListManagement,Reservation"
+    },
+    {
+      "key": "LocalAuthListEnabled",
+      "readonly": false,
+      "value": "false"
+    },
+    {
+      "key": "AuthorizeRemoteTxRequests",
+      "readonly": false,
+      "value": "false"
+    },
+    {
+      "key": "WebSocketPingInterval",
+      "readonly": false,
+      "value": "60"
+    },
+    {
+      "key": "ReserveConnectorZeroSupported",
+      "readonly": false,
+      "value": "false"
+    },
+    {
+      "key": "HeartbeatInterval",
+      "readonly": false,
+      "value": "0",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "HeartBeatInterval",
+      "readonly": false,
+      "value": "0",
+      "visible": false,
+      "reboot": false
+    },
+    {
+      "key": "NumberOfConnectors",
+      "readonly": true,
+      "value": "2",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "ConnectorPhaseRotation",
+      "readonly": false,
+      "value": "0.RST,1.RST,2.RST",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "ConnectionTimeOut",
+      "readonly": false,
+      "value": "30",
+      "visible": true,
+      "reboot": false
+    }
+  ],
+  "configurationHash": "a672f27c0fee482d354838390b31bd4e17d89cec1fe6e810fe2b39e42f9ea555fb3ceaf7e75a5dedfa61ba3a89b02a6c"
+}

@@ -1,0 +1,182 @@
+{
+  "stationInfo": {
+    "enableStatistics": false,
+    "autoStart": true,
+    "remoteAuthorization": true,
+    "currentOutType": "AC",
+    "mainVoltageMeterValues": true,
+    "phaseLineToLineVoltageMeterValues": false,
+    "customValueLimitationMeterValues": true,
+    "ocppStrictCompliance": true,
+    "outOfOrderEndMeterValues": false,
+    "beginEndMeterValues": false,
+    "meteringPerTransaction": true,
+    "transactionDataMeterValues": false,
+    "supervisionUrlOcppConfiguration": true,
+    "supervisionUrlOcppKey": "CentralSystemAddress",
+    "useConnectorId0": true,
+    "ocppVersion": "1.6",
+    "firmwareVersionPattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$",
+    "firmwareUpgrade": {
+      "versionUpgrade": {
+        "step": 1
+      },
+      "reset": true
+    },
+    "ocppPersistentConfiguration": true,
+    "stationInfoPersistentConfiguration": true,
+    "automaticTransactionGeneratorPersistentConfiguration": true,
+    "resetTime": 30000,
+    "autoReconnectMaxRetries": -1,
+    "registrationMaxRetries": -1,
+    "reconnectExponentialDelay": false,
+    "stopTransactionsOnStopped": true,
+    "idTagsFile": "idtags.json",
+    "baseName": "CS-KEBA",
+    "chargePointModel": "KC-P30-ESS400C2-E0R",
+    "chargePointVendor": "Keba AG",
+    "firmwareVersion": "1.10.1",
+    "randomConnectors": false,
+    "amperageLimitationOcppKey": "MaxAvailableCurrent",
+    "amperageLimitationUnit": "mA",
+    "templateHash": "8be15f6ac580ce8453c900c6789549b47a2267cbee2ebd94a6f8959542c41cabd3ecbc0d7bf6df5c4543a1568a27af66",
+    "hashId": "8b77df39269fe133d4ddf3ed6ec379763a80fd33bcc379faffdb2f59f1f7ac29aef45cad56a438c7be132c9aa281a8ec",
+    "templateIndex": 2,
+    "templateName": "keba.station-template",
+    "chargingStationId": "CS-KEBA-00002",
+    "voltageOut": 230,
+    "maximumPower": 22080,
+    "maximumAmperage": 32
+  },
+  "automaticTransactionGenerator": {
+    "enable": false,
+    "minDuration": 30,
+    "maxDuration": 60,
+    "minDelayBetweenTwoTransactions": 15,
+    "maxDelayBetweenTwoTransactions": 30,
+    "probabilityOfStart": 1,
+    "stopAfterHours": 0.3,
+    "stopAbsoluteDuration": false,
+    "requireAuthorize": true
+  },
+  "connectorsStatus": [
+    {
+      "availability": "Operative",
+      "chargingProfiles": []
+    },
+    {
+      "MeterValues": [
+        {
+          "unit": "V",
+          "measurand": "Voltage"
+        },
+        {
+          "unit": "W",
+          "measurand": "Power.Active.Import"
+        },
+        {
+          "unit": "A",
+          "measurand": "Current.Import"
+        },
+        {
+          "unit": "Wh"
+        }
+      ],
+      "availability": "Operative",
+      "idTagLocalAuthorized": false,
+      "idTagAuthorized": false,
+      "transactionRemoteStarted": false,
+      "transactionStarted": false,
+      "energyActiveImportRegisterValue": 0,
+      "transactionEnergyActiveImportRegisterValue": 0,
+      "chargingProfiles": []
+    }
+  ],
+  "configurationKey": [
+    {
+      "key": "MeterValuesSampledData",
+      "readonly": false,
+      "value": "Energy.Active.Import.Register,Power.Active.Import,Current.Import,Voltage"
+    },
+    {
+      "key": "MeterValueSampleInterval",
+      "readonly": false,
+      "value": "30"
+    },
+    {
+      "key": "SupportedFeatureProfiles",
+      "readonly": true,
+      "value": "Core,FirmwareManagement,LocalAuthListManagement,SmartCharging,RemoteTrigger,Reservation"
+    },
+    {
+      "key": "LocalAuthListEnabled",
+      "readonly": false,
+      "value": "false"
+    },
+    {
+      "key": "AuthorizeRemoteTxRequests",
+      "readonly": false,
+      "value": "false"
+    },
+    {
+      "key": "WebSocketPingInterval",
+      "readonly": false,
+      "value": "60"
+    },
+    {
+      "key": "ReserveConnectorZeroSupported",
+      "readonly": false,
+      "value": "false"
+    },
+    {
+      "key": "HeartbeatInterval",
+      "readonly": false,
+      "value": "0",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "HeartBeatInterval",
+      "readonly": false,
+      "value": "0",
+      "visible": false,
+      "reboot": false
+    },
+    {
+      "key": "CentralSystemAddress",
+      "readonly": false,
+      "value": "ws://localhost:8010/OCPP16/5be7fb271014d90008992f06",
+      "visible": true,
+      "reboot": true
+    },
+    {
+      "key": "MaxAvailableCurrent",
+      "readonly": false,
+      "value": "32000",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "ConnectorPhaseRotation",
+      "readonly": false,
+      "value": "0.RST,1.RST",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "ConnectionTimeOut",
+      "readonly": false,
+      "value": "30",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "NumberOfConnectors",
+      "readonly": true,
+      "value": "1",
+      "visible": true,
+      "reboot": false
+    }
+  ],
+  "configurationHash": "bbdc7674159ceb595b14436e986d8a65a007c2b19c554321b56ca719ada62d8619898da27a828a873240f842c677479e"
+}

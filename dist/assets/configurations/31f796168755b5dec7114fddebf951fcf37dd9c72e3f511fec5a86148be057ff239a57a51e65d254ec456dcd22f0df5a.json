@@ -1,0 +1,201 @@
+{
+  "stationInfo": {
+    "enableStatistics": false,
+    "autoStart": true,
+    "remoteAuthorization": true,
+    "currentOutType": "AC",
+    "mainVoltageMeterValues": true,
+    "phaseLineToLineVoltageMeterValues": false,
+    "customValueLimitationMeterValues": true,
+    "ocppStrictCompliance": true,
+    "outOfOrderEndMeterValues": false,
+    "beginEndMeterValues": false,
+    "meteringPerTransaction": true,
+    "transactionDataMeterValues": false,
+    "supervisionUrlOcppConfiguration": true,
+    "supervisionUrlOcppKey": "ocppcentraladdress",
+    "useConnectorId0": true,
+    "ocppVersion": "1.6",
+    "firmwareVersionPattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+    "firmwareUpgrade": {
+      "versionUpgrade": {
+        "step": 1
+      },
+      "reset": true
+    },
+    "ocppPersistentConfiguration": true,
+    "stationInfoPersistentConfiguration": true,
+    "automaticTransactionGeneratorPersistentConfiguration": true,
+    "resetTime": 30000,
+    "autoReconnectMaxRetries": -1,
+    "registrationMaxRetries": -1,
+    "reconnectExponentialDelay": false,
+    "stopTransactionsOnStopped": true,
+    "idTagsFile": "idtags.json",
+    "baseName": "CS-SCHNEIDER",
+    "chargePointModel": "MONOBLOCK",
+    "chargePointVendor": "Schneider Electric",
+    "firmwareVersion": "3.3.0.10",
+    "randomConnectors": false,
+    "voltageOut": 231,
+    "amperageLimitationOcppKey": "maxintensitysocket",
+    "templateHash": "45f4b60951976275cda0db70371c7eb33debda9c68e87523b320a1c696c85d7934ac7ac2ce388fcfa1bb514f160fa603",
+    "hashId": "31f796168755b5dec7114fddebf951fcf37dd9c72e3f511fec5a86148be057ff239a57a51e65d254ec456dcd22f0df5a",
+    "templateIndex": 1,
+    "templateName": "schneider.station-template",
+    "chargingStationId": "CS-SCHNEIDER-00001",
+    "chargeBoxSerialNumber": "EV.2S22P440A2CBADD6D157BF2BD74E8643C3BF334",
+    "maximumPower": 44160,
+    "maximumAmperage": 32
+  },
+  "automaticTransactionGenerator": {
+    "enable": false,
+    "minDuration": 60,
+    "maxDuration": 80,
+    "minDelayBetweenTwoTransactions": 15,
+    "maxDelayBetweenTwoTransactions": 30,
+    "probabilityOfStart": 1,
+    "stopAfterHours": 0.3,
+    "stopAbsoluteDuration": false,
+    "requireAuthorize": true
+  },
+  "connectorsStatus": [
+    {
+      "availability": "Operative",
+      "chargingProfiles": []
+    },
+    {
+      "MeterValues": [
+        {
+          "unit": "V",
+          "measurand": "Voltage"
+        },
+        {
+          "unit": "A",
+          "measurand": "Current.Import"
+        },
+        {
+          "unit": "Wh"
+        }
+      ],
+      "availability": "Operative",
+      "idTagLocalAuthorized": false,
+      "idTagAuthorized": false,
+      "transactionRemoteStarted": false,
+      "transactionStarted": false,
+      "energyActiveImportRegisterValue": 0,
+      "transactionEnergyActiveImportRegisterValue": 0,
+      "chargingProfiles": []
+    },
+    {
+      "MeterValues": [
+        {
+          "unit": "V",
+          "measurand": "Voltage"
+        },
+        {
+          "unit": "A",
+          "measurand": "Current.Import"
+        },
+        {
+          "unit": "Wh"
+        }
+      ],
+      "availability": "Operative",
+      "idTagLocalAuthorized": false,
+      "idTagAuthorized": false,
+      "transactionRemoteStarted": false,
+      "transactionStarted": false,
+      "energyActiveImportRegisterValue": 0,
+      "transactionEnergyActiveImportRegisterValue": 0,
+      "chargingProfiles": []
+    }
+  ],
+  "configurationKey": [
+    {
+      "key": "MeterValuesSampledData",
+      "readonly": false,
+      "value": "Energy.Active.Import.Register,Current.Import,Voltage"
+    },
+    {
+      "key": "MeterValueSampleInterval",
+      "readonly": false,
+      "value": "30"
+    },
+    {
+      "key": "SupportedFeatureProfiles",
+      "readonly": true,
+      "value": "Core,FirmwareManagement,LocalAuthListManagement,SmartCharging,RemoteTrigger,Reservation"
+    },
+    {
+      "key": "LocalAuthListEnabled",
+      "readonly": false,
+      "value": "false"
+    },
+    {
+      "key": "AuthorizeRemoteTxRequests",
+      "readonly": false,
+      "value": "false"
+    },
+    {
+      "key": "WebSocketPingInterval",
+      "readonly": false,
+      "value": "60"
+    },
+    {
+      "key": "ReserveConnectorZeroSupported",
+      "readonly": false,
+      "value": "false"
+    },
+    {
+      "key": "HeartbeatInterval",
+      "readonly": false,
+      "value": "0",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "HeartBeatInterval",
+      "readonly": false,
+      "value": "0",
+      "visible": false,
+      "reboot": false
+    },
+    {
+      "key": "ocppcentraladdress",
+      "readonly": false,
+      "value": "ws://localhost:8010/OCPP16/5be7fb271014d90008992f06",
+      "visible": true,
+      "reboot": true
+    },
+    {
+      "key": "maxintensitysocket",
+      "readonly": false,
+      "value": "32",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "ConnectorPhaseRotation",
+      "readonly": false,
+      "value": "0.RST,1.RST,2.RST",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "ConnectionTimeOut",
+      "readonly": false,
+      "value": "30",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "NumberOfConnectors",
+      "readonly": true,
+      "value": "2",
+      "visible": true,
+      "reboot": false
+    }
+  ],
+  "configurationHash": "1b6672294229995e55365fc6d328b645a812a4d6c823f899255780c8f18d29aa5bcd4c3164df09ba373acc19894cb897"
+}

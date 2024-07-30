@@ -1,0 +1,214 @@
+{
+  "stationInfo": {
+    "enableStatistics": false,
+    "autoStart": true,
+    "remoteAuthorization": true,
+    "currentOutType": "DC",
+    "mainVoltageMeterValues": true,
+    "phaseLineToLineVoltageMeterValues": false,
+    "customValueLimitationMeterValues": true,
+    "ocppStrictCompliance": true,
+    "outOfOrderEndMeterValues": false,
+    "beginEndMeterValues": false,
+    "meteringPerTransaction": true,
+    "transactionDataMeterValues": false,
+    "supervisionUrlOcppConfiguration": false,
+    "supervisionUrlOcppKey": "ConnectionUrl",
+    "useConnectorId0": true,
+    "ocppVersion": "1.6",
+    "firmwareVersionPattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$",
+    "firmwareUpgrade": {
+      "versionUpgrade": {
+        "step": 1
+      },
+      "reset": true
+    },
+    "ocppPersistentConfiguration": true,
+    "stationInfoPersistentConfiguration": true,
+    "automaticTransactionGeneratorPersistentConfiguration": true,
+    "resetTime": 30000,
+    "autoReconnectMaxRetries": -1,
+    "registrationMaxRetries": -1,
+    "reconnectExponentialDelay": false,
+    "stopTransactionsOnStopped": true,
+    "idTagsFile": "idtags.json",
+    "baseName": "CS-ABB",
+    "chargePointModel": "MD_TERRA_53",
+    "chargePointVendor": "ABB",
+    "firmwareVersion": "4.0.4.22",
+    "powerSharedByConnectors": true,
+    "randomConnectors": false,
+    "templateHash": "eda0508e85c3c71770e4fce93ea785890cad3673f63c99e7f56e85150df2f9618fa954a586e09d1ef389fba37fceb063",
+    "hashId": "6a5491d77bee1b730af08ac0a1b7a8008f42a0bbaf84cc4c1de75101cc6791313bd587da8588cdfdc1a6f51bdbc9125a",
+    "templateIndex": 2,
+    "templateName": "abb.station-template",
+    "chargingStationId": "CS-ABB-00002",
+    "voltageOut": 400,
+    "maximumPower": 50000,
+    "maximumAmperage": 125
+  },
+  "automaticTransactionGenerator": {
+    "enable": false,
+    "minDuration": 60,
+    "maxDuration": 80,
+    "minDelayBetweenTwoTransactions": 15,
+    "maxDelayBetweenTwoTransactions": 30,
+    "probabilityOfStart": 1,
+    "stopAfterHours": 0.3,
+    "stopAbsoluteDuration": false,
+    "requireAuthorize": true
+  },
+  "connectorsStatus": [
+    {
+      "availability": "Operative",
+      "chargingProfiles": []
+    },
+    {
+      "MeterValues": [
+        {
+          "unit": "Percent",
+          "context": "Sample.Periodic",
+          "measurand": "SoC",
+          "location": "EV"
+        },
+        {
+          "unit": "V",
+          "context": "Sample.Periodic",
+          "measurand": "Voltage"
+        },
+        {
+          "unit": "W",
+          "context": "Sample.Periodic",
+          "measurand": "Power.Active.Import"
+        },
+        {
+          "unit": "A",
+          "context": "Sample.Periodic",
+          "measurand": "Current.Import"
+        },
+        {
+          "unit": "Wh",
+          "context": "Sample.Periodic"
+        }
+      ],
+      "availability": "Operative",
+      "idTagLocalAuthorized": false,
+      "idTagAuthorized": false,
+      "transactionRemoteStarted": false,
+      "transactionStarted": false,
+      "energyActiveImportRegisterValue": 0,
+      "transactionEnergyActiveImportRegisterValue": 0,
+      "chargingProfiles": []
+    },
+    {
+      "MeterValues": [
+        {
+          "unit": "Percent",
+          "context": "Sample.Periodic",
+          "measurand": "SoC",
+          "location": "EV"
+        },
+        {
+          "unit": "V",
+          "context": "Sample.Periodic",
+          "measurand": "Voltage"
+        },
+        {
+          "unit": "W",
+          "context": "Sample.Periodic",
+          "measurand": "Power.Active.Import"
+        },
+        {
+          "unit": "A",
+          "context": "Sample.Periodic",
+          "measurand": "Current.Import"
+        },
+        {
+          "unit": "Wh",
+          "context": "Sample.Periodic"
+        }
+      ],
+      "availability": "Operative",
+      "idTagLocalAuthorized": false,
+      "idTagAuthorized": false,
+      "transactionRemoteStarted": false,
+      "transactionStarted": false,
+      "energyActiveImportRegisterValue": 0,
+      "transactionEnergyActiveImportRegisterValue": 0,
+      "chargingProfiles": []
+    }
+  ],
+  "configurationKey": [
+    {
+      "key": "MeterValuesSampledData",
+      "readonly": false,
+      "value": "SoC,Energy.Active.Import.Register,Power.Active.Import,Current.Import,Voltage"
+    },
+    {
+      "key": "MeterValueSampleInterval",
+      "readonly": false,
+      "value": "30"
+    },
+    {
+      "key": "SupportedFeatureProfiles",
+      "readonly": true,
+      "value": "Core,FirmwareManagement,LocalAuthListManagement,SmartCharging,RemoteTrigger,Reservation"
+    },
+    {
+      "key": "LocalAuthListEnabled",
+      "readonly": false,
+      "value": "false"
+    },
+    {
+      "key": "AuthorizeRemoteTxRequests",
+      "readonly": false,
+      "value": "false"
+    },
+    {
+      "key": "WebSocketPingInterval",
+      "readonly": false,
+      "value": "60"
+    },
+    {
+      "key": "ReserveConnectorZeroSupported",
+      "readonly": false,
+      "value": "false"
+    },
+    {
+      "key": "HeartbeatInterval",
+      "readonly": false,
+      "value": "0",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "HeartBeatInterval",
+      "readonly": false,
+      "value": "0",
+      "visible": false,
+      "reboot": false
+    },
+    {
+      "key": "ConnectorPhaseRotation",
+      "readonly": false,
+      "value": "0.RST,1.NotApplicable,2.NotApplicable",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "ConnectionTimeOut",
+      "readonly": false,
+      "value": "30",
+      "visible": true,
+      "reboot": false
+    },
+    {
+      "key": "NumberOfConnectors",
+      "readonly": true,
+      "value": "2",
+      "visible": true,
+      "reboot": false
+    }
+  ],
+  "configurationHash": "b3d57ed0ec9c7466533adb8e3f7120dcf49b9d8177a5e3fa74f6a1398f307f831178e34597576dac8c598d41d187a6e9"
+}
